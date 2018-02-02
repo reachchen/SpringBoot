@@ -25,7 +25,7 @@ public class CloudInfoController {
         JSONObject rootNode = new JSONObject();
 
         rootNode.put("version", "1.0.0");
-        rootNode.put("producer", "浙江力太科技");
+        rootNode.put("producer", "只道寻常网");
 
         ResultDTO result = ResultUtil.Success(rootNode);
 
