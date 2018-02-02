@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: "springBootDemo"
+  datasource:
+    name: ertongai
+    url: jdbc:mysql://114.215.17.144:3307/ertongai
+    username: weixin
+    password: MoconWeixin123456
+    validation-query: SELECT 1
+    test-while-idle: true
+#    driver-class-name: com.mysql.jdbc.driver
+server:
+  port: 8080
+  context-path: /api/v1/trace/qsb/
+  tomcat:
+    uri-encoding: GBK
+
+swagger:
+  package: com.zjrealtech.trace.controller
+
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.zjrealtech.trace.dao.entity
+
+logging:
+  level: "debug"
+  config: classpath:logback-spring.xml
